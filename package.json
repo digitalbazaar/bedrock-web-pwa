@@ -1,0 +1,23 @@
+{
+  "name": "@bedrock/web",
+  "version": "2.0.2-0",
+  "type": "module",
+  "description": "Bedrock Web App Launcher",
+  "module": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-web"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-digitalbazaar": "^2.8.0",
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "jsdoc-to-markdown": "^7.1.1"
+  }
+}
