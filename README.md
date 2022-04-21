@@ -1,2 +1,2 @@
-# bedrock-web
-Web App launcher for Bedrock
+# bedrock-web-pwa
+Progress Web App utilities for Bedrock Web Apps
