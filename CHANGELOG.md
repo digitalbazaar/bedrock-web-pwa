@@ -1,6 +1,6 @@
 # bedrock-web-pwa ChangeLog
 
-## 1.0.0 - 2022-xx-xx
+## 1.0.0 - 2022-04-21
 
 ### Added
 - Add core files.
