@@ -1,7 +1,9 @@
 /*!
  * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
  */
-import {initialize, showInstallPrompt, state} from '@bedrock/web-pwa';
+import {
+  canInstall, initialize, showInstallPrompt, state
+} from '@bedrock/web-pwa';
 
 describe('bedrock-web-pwa', () => {
   beforeEach(() => {
@@ -54,6 +56,24 @@ describe('bedrock-web-pwa', () => {
       }
       should.exist(error);
       error.message.should.include('No PWA install prompt available');
+    });
+  });
+  describe('canInstall', () => {
+    beforeEach(() => {
+      // clear initialized state
+      state._initialized = false;
+    });
+    it('should return false', async () => {
+      let error;
+      let installable;
+      try {
+        initialize();
+        installable = await canInstall();
+      } catch(e) {
+        error = e;
+      }
+      should.not.exist(error);
+      should.equal(installable, false);
     });
   });
 });
