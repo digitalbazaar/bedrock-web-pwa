@@ -1,6 +1,6 @@
 # bedrock-web-pwa ChangeLog
 
-## 1.1.0 - 2022-04-xx
+## 1.1.0 - 2022-04-24
 
 ### Added
 - Add `canInstall` method to check if a PWA can be installed generally
